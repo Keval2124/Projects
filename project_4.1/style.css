@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,*:before,*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    background: rgb(200, 230, 201);
+    background: linear-gradient(90deg, #00b09b 0%, #96c93d 100%);
+}
+
+#container {
+    width: 360px;
+    margin: 100px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(42, 59, 56, 0.4);
+}
+
+h1 {
+    font-size: 1.6em;
+    font-weight: bold;
+    padding: .8em .5em;
+    background: #00b09b;
+    color: #fff;
+}
+
+.fa-plus {
+    float: right;
+    transition: ease-in .2s;
+}
+
+.rotated {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transition: ease-in .2s;
+}
+
+.hide {
+    display: none;
+}
+
+input {
+    clear: left;
+    font-size: 1em;
+    padding: .8em .5em;
+    width: 100%;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(48, 87, 80, 0.4);
+    background-color: rgb(236, 236, 236);
+    transition: ease-in .2s;
+}
+
+input:focus {
+    box-shadow: 0 5px 5px rgba(42, 59, 56, .4);
+    border-bottom: none;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+    color: grey;
+    transition: ease-in .2s;
+}
+
+li {
+    width: 100%;
+    line-height: 40px;
+    transition: ease-in .2s;
+}
+
+li:nth-child(2n) {
+    background-color: rgb(236, 236, 236);
+}
+
+span {
+    background-color: #e74c3c;
+    height: 40px;
+    margin-right: 10px;
+    text-align: center;
+    color: #fff;
+    width: 0;
+    display: inline-block;
+    transition: 0.2s linear;
+    opacity: 0;
+}
+
+li:hover span {
+    width: 40px;
+    opacity: 1;
+}
